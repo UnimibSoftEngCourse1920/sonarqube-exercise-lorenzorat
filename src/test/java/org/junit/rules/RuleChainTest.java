@@ -62,7 +62,7 @@ public class RuleChainTest {
                 "starting middle rule", "starting inner rule",
                 "finished inner rule", "finished middle rule",
                 "finished outer rule");
-        assertEquals(expectedLog, LOG);
+        assertEquals(LOG, expectedLog);
     }
 
     @Test

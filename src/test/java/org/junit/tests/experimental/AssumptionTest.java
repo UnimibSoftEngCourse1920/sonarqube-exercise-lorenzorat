@@ -273,7 +273,7 @@ public class AssumptionTest {
         final List<Failure> failures =
                 runAndGetAssumptionFailures(HasAssumeWithMessageAndCause.class);
         assertTrue(failures.get(0).getMessage().contains(message));
-        assertSame(failures.get(0).getException().getCause(), e);
+        assertSame(e, failures.get(0).getException().getCause());
     }
 
     public static class HasFailingAssumptionWithMessage {
